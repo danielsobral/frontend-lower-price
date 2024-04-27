@@ -1,0 +1,334 @@
+/* START HEADER */
+.container-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100vw;
+    padding: 1rem 1rem;
+    background-color: var(--tertiary-colors-900);
+    border-radius: 0rem 0rem 1.5rem 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.header-menu-mobile {
+    display: none;
+}
+
+.brand-company {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    gap: 1.5rem;
+    cursor: pointer;
+}
+
+header img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+    line-height: 2.3rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+header h1 span {
+    color: var(--secundary-color-300);
+    margin-left: 0.5rem;
+}
+
+
+.image-square {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    border-radius: var(--border-radius);
+    background-color: var(--secundary-color-300);
+}
+
+.image-background {
+    background-color: var(--color-white);
+    border-radius: 100%;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.search-elements {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.9rem;
+}
+
+.search-elements img {
+    width: 1.2rem;
+    position: relative;
+    right: 1.8rem;
+    cursor: pointer;
+}
+
+.search input {
+    padding: 0.8rem 2.2rem;
+    width: 15rem;
+    background-color: var(--primary-color-700);
+    border-radius: var(--border-radius);
+    color: var(--color-white);
+    font-size: 1rem;
+    border: solid 1px var(--primary-color-900);
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.notification-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    padding: 0.3rem;
+    height: 0.5rem;
+    width: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: lighter;
+    color: var(--color-white);
+    border-radius: 50%;
+    position: relative;
+    right: 1.7rem;
+    top: -0.7rem;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 1rem;
+    margin-right: 1.5rem;
+}
+
+.img-user img {
+    border-radius: 30%;
+}
+.user-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    padding-right: 1.5rem;
+}
+
+.menu-user {
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+    z-index: 20;
+    border-radius: 1rem;
+    background-color: var(--tertiary-colors-900);
+    display: none;
+    padding: 1rem;
+}
+
+.menu-user div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 1rem 1rem 0rem;
+}
+
+.menu-user span a {
+    color: var(--color-white);
+}
+
+.menu-user span a:hover {
+    color: var(--secundary-color-300);
+}
+/* END HEADER */
+
+/* START LEFT SIDE MENU */
+.nav-left-side-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background-color: var(--tertiary-colors-900);
+    border-radius: 1.5rem;
+    margin: 8rem 4rem 1.5rem 1rem;
+    width: 13rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.scroll-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    border-radius: 1.5rem;
+    overflow-y: hidden;
+    height: 100%;
+    width: 12rem;
+    margin: 2rem 0rem 2rem 0rem;
+}
+
+.scroll-menu:hover {
+    overflow-y: auto;
+}
+
+.scroll-menu::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* .scroll-menu::-webkit-scrollbar-track {
+    background-color: var(--tertiary-colors-900);
+    border-radius: 5rem;
+} */
+
+.scroll-menu::-webkit-scrollbar-thumb {
+    border-radius: 5rem;
+    background-color: var(--secundary-color-300);
+}
+
+.option-menu {
+    margin: 0rem 0rem 1rem 1rem;
+}
+
+.option-left-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    width: 10rem;
+    background-color: var(--primary-color-900);
+    cursor: pointer;
+    border-radius: 0.5rem;
+    color: var(--tertiary-colors-200);
+}
+
+.option-left-menu img {
+    width: 2.5rem;
+}
+
+.option-left-menu:hover {
+    color: var(--secundary-color-300);
+}
+
+.menu-down {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 9.5rem;
+    padding: 0rem 0rem 0.5rem 0.8rem;
+    border-radius: 0.5rem;
+    color: var(--tertiary-colors-200);
+    display: none;
+}
+
+.menu-down div {
+    padding: 0.5rem 0rem 0.5rem 0.5rem;
+    width: 8.5rem;
+    margin: 0.5rem 0rem 0rem 0rem;
+    background-color: var(--primary-color-900);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.menu-down div:hover {
+    background-color: var(--secundary-color-300);
+    color: var(--tertiary-colors-900);
+}
+
+.menu-down div:active {
+    background-color: var(--secundary-color-100);
+}
+
+.help {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    margin: 1rem 1rem 0rem 1rem;
+    border-radius: var(--border-radius);
+    border: solid 1.5px var(--secundary-color-300);
+    color: var(--color-white);
+    background-color: var(--tertiary-colors-900);
+}
+
+.help-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+    text-wrap: wrap;
+    padding-top: 0.5rem;
+}
+
+.help-image {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.help-image img {
+    width: 3rem;
+}
+
+.help-instructions {
+    text-align: start;
+    color: var(--secundary-color-300);
+}
+
+.help-instructions p {
+    padding-top: 0.3rem;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    color: var(--tertiary-colors-200);
+}
+
+.help button {
+    width: 9rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    background-color: var(--secundary-color-300);
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+
+.help button:active {
+    background-color: var(--secundary-color-100);
+}
+/* END LEFT SIDE MENU */

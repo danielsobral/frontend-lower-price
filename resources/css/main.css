@@ -1,0 +1,62 @@
+@import url('./boot/variables.css');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: Montserrat, Arial, sans-serif;
+}
+
+body {
+  background-color: var(--primary-color-900);
+}
+
+ul {
+  list-style-type: none;
+  margin-block-start: unset;
+  margin-block-end: unset;
+  margin-inline-start: unset;
+  margin-inline-end: unset;
+  padding-inline-start: unset;
+}
+
+.show {
+  display: block;
+  transform: scaleY(1);
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-input-placeholder {
+  color: var(--primary-color-400);
+}
+
+/* *::-webkit-scrollbar {
+  width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: var(--primary-color-900);
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 3rem;
+  background-color: white;
+} */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 2rem;
+  background-color: var(--secundary-color-300);
+  color: var(--tertiary-colors-900);
+  font-weight: 500;
+  font-size: 1rem;
+}

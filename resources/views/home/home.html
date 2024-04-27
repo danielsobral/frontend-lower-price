@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (max-width: 897px)" href="../../css/mobile/home.css">
+    <link rel="stylesheet" media="screen and (min-width: 898px)" href="../../css/desktop/home.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <title>Lower Code</title>
+</head>
+<body>
+    <header>
+        <div class="container-header">
+            <div class="brand-company">
+                <div class="image-square">
+                    <div class="image-background">
+                        <figure><img src="../../images/header/logo/simbolo-do-dolar.png" alt=""></figure>
+                    </div>
+                </div>
+                
+                <h1>Lower <span>Price</span></h1>
+            </div>
+
+            <div class="search">
+                <div class="search-elements">
+                    <input type="text" name="search" id="search" placeholder="Search">
+                    <img src="../../images/header/search/search.svg" alt="">
+                </div>
+            </div>
+
+            <div class="user">
+                <div class="notification">
+                    <img src="../../images/header/notification/notification.svg" alt="">
+                    <div class="notification-status">2</div>
+                </div>
+                <div class="img-user">
+                    <img src="https://i.pravatar.cc/300" alt="">
+                </div>
+                <div class="user-name">
+                    <span>Violet</span>
+
+                    <img id="image-menu-user" src="../../images/arrow/arrow-left.svg" alt="" onclick="menuDropdown('menu-user', '../../images/arrow/', 'image-menu-user');">
+
+                    <div class="menu-user" id="menu-user">
+                        <div>
+                            <img src="../../images/icons/settings.svg" alt="">
+                            <span><a href="#">Settings</a></span>
+                        </div>
+
+                        <div>
+                            <img src="../../images/icons/update.svg" alt="">
+                            <span><a href="#">Updates</a></span>
+                        </div>
+                        
+                        <div>
+                            <img src="../../images/icons/logout.svg" alt="">
+                            <span><a href="../../../index.html">Logout</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-menu-mobile">
+            <div class="brand-company">
+                <div class="image-square">
+                    <div class="image-background">
+                        <figure><img src="../../images/header/logo/simbolo-do-dolar.png" alt=""></figure>
+                    </div>
+                </div>
+                
+                <h1>Lower <span>Price</span></h1>
+            </div>
+
+            <div class="search">
+                <div class="search-elements">
+                    <input type="text" name="search" id="search" placeholder="Search">
+                    <img src="../../images/header/search/search.svg" alt="">
+                </div>
+            </div>
+
+            <div class="menu-hamburguer">
+                <img id="menu-hamburguer-image" src="../../images/icons/mobile-menu.svg" alt="" onclick="menuHamburguer('menu-user-mobile', '../../images/icons/', 'menu-hamburguer-image');">
+                
+                <div class="notification-status">2</div>
+                
+                <div class="menu-user-mobile" id="menu-user-mobile">
+                    <div class="header-mobile-user">
+                        <div class="img-user">
+                            <img src="https://i.pravatar.cc/300" alt="">
+                            <div class="profile-user">
+                                <span>Violet</span>
+                                <div class="my-profile-mobile">
+                                    <a href="#">My profile</a>
+                                    <img src="../../images/arrow-mobile/arrow-right.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hr"></div>
+                    
+                    <!-- CONSTRUIR O MENU COM AS OPÇÕES DE SISTEMAS -->
+                    <!-- <div class="options-menu-mobile">
+                        <div class="option-menu-mobile">
+                            <div class="option-left-menu" onclick="menuDropdown('menu-dash', '../../images/arrow/', 'image-menu-dash', true);">
+                                <img src="../../images/icons/dashboard.svg" alt="">
+                                    <span>Dashboards</span>
+                                <img id="image-menu-dash" src="../../images/arrow-mobile/arrow-left.svg" alt="">
+                            </div>
+                            
+                            <div class="menu-down" id="menu-dash">
+                                <div>Item 1</div>
+                                <div>Item 1</div>
+                                <div>Item 1</div>
+                                <div>Item 1</div>
+                                <div>Item 1</div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav-left-side-menu">
+        <div class="scroll-menu">
+            <div class="option-menus">
+            <div class="option-menu">
+                <div class="option-left-menu" onclick="menuDropdown('menu-dash', '../../images/arrow/', 'image-menu-dash', true);">
+                    <img src="../../images/icons/dashboard.svg" alt="">
+                        <span>Dashboards</span>
+                    <img id="image-menu-dash" src="../../images/arrow/arrow-left.svg" alt="">
+                </div>
+                
+                <div class="menu-down" id="menu-dash">
+                    <div>Item 1</div>
+                    <div>Item 1</div>
+                    <div>Item 1</div>
+                    <div>Item 1</div>
+                    <div>Item 1</div>
+                </div>
+            </div>
+
+            <div class="option-menu">
+                <div class="option-left-menu" onclick="menuDropdown('menu-store', '../../images/arrow/', 'image-menu-store', true);">
+                    <img src="../../images/icons/store.svg" alt="">
+                        <span>Promotions</span>
+                    <img id="image-menu-store" src="../../images/arrow/arrow-left.svg" alt="">
+                </div>
+                
+                <div class="menu-down" id="menu-store">
+                    <div>Item 1</div>
+                    <div>Item 1</div>
+                    <div>Item 1</div>
+                    <div>Item 1</div>
+                    <div>Item 1</div>
+                </div>
+            </div>
+
+            <div class="option-menu">
+                <div class="option-left-menu" onclick="menuDropdown('menu-alarm', '../../images/arrow/', 'image-menu-alarm', true);">
+                    <img src="../../images/icons/alarm.svg" alt="">
+                        <span>Alerts</span>
+                    <img id="image-menu-alarm" src="../../images/arrow/arrow-left.svg" alt="">
+                </div>
+                
+                <div class="menu-down" id="menu-alarm">
+                    <div>Item 1</div>
+                    <div>Item 1</div>
+                    <div>Item 1</div>
+                    <div>Item 1</div>
+                    <div>Item 1</div>
+                </div>
+            </div>
+
+            <div class="option-menu">
+                <div class="option-left-menu" onclick="menuDropdown('menu-book', '../../images/arrow/', 'image-menu-book', true);">
+                    <img src="../../images/icons/book.svg" alt="">
+                        <span>Wishes</span>
+                    <img id="image-menu-book" src="../../images/arrow/arrow-left.svg" alt="">
+                </div>
+                
+                <div class="menu-down" id="menu-book">
+                    <div>Item 1</div>
+                    <div>Item 1</div>
+                    <div>Item 1</div>
+                    <div>Item 1</div>
+                    <div>Item 1</div>
+                </div>
+            </div>
+
+            <div class="option-menu">
+                <div class="option-left-menu" onclick="menuDropdown('menu-money', '../../images/arrow/', 'image-menu-money', true);">
+                    <img src="../../images/icons/money.svg" alt="">
+                        <span>Savings</span>
+                    <img id="image-menu-money" src="../../images/arrow/arrow-left.svg" alt="">
+                </div>
+                
+                <div class="menu-down" id="menu-money">
+                    <div>Item 1</div>
+                    <div>Item 1</div>
+                    <div>Item 1</div>
+                    <div>Item 1</div>
+                    <div>Item 1</div>
+                </div>
+            </div>
+        </div>
+        <div class="help">
+            <div class="help-container">
+                <div class="help-image">
+                    <img src="../../images/icons/help.svg" alt="">
+                </div>
+                <div class="help-instructions">
+                    <strong>Need Help?</strong>
+                    <p>Please cheeck our docs</p>
+                </div>
+            </div>
+            <button>DOCUMENTATION</button>
+        </div>
+    </nav>
+
+    <main>
+        
+    </main>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>
