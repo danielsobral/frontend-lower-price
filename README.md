@@ -1,3 +1,3 @@
 # Lower Price
 
-A simple app to help you get the best deals on your purchases
+A simple web system to help you get the best promotions on your purchases.
